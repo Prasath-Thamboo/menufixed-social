@@ -1,3 +1,160 @@
+header{
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  font-family: Helvetica;
+}
+
+
+header button{
+  border: none; 
+  padding: 8px 12px; 
+  color: white;
+  background-color: grey;
+  transition: .2s;
+  font-size: 20px;
+}
+header button:hover{
+  color: white;
+  background-color: black;
+}
+header button:active{
+  color: white;
+  background-color: black;
+ 
+}
+
+.contain-first{
+  background-color: black;
+}
+.contain-first .bg{
+  display: flex; 
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.contain-first .bg form{
+  margin:0;
+  padding: 20px;
+  color: white; 
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap : 5px; 
+}
+
+.contain-first .bg label{
+  font-size: 20px;
+}
+
+.contain-first .bg form input{
+  padding: 10px 12px;
+}
+
+.contain-f-social{
+  display: flex; 
+  gap: 10px;
+    
+}
+.contain-f-social a .menuItems i{
+  font-size: 1.5rem;
+  color: white
+    
+}
+
+.contain-second{
+  display: flex; 
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.contain-second h1 a{
+  text-decoration: none;
+  list-style: none;
+  color: black;
+  transition: 0.2s;
+}
+
+.contain-second h1 a:hover{
+  
+  color: grey;
+}
+
+.contain-second ul{
+  display: flex; 
+  justify-content: space-between;
+  gap: 30px; 
+  list-style: none;
+}
+
+.contain-second ul li a {
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+  font-weight: 600;
+}
+
+.has-sub-menu .sous-menu{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 180px;
+  transition: .5s;
+  visibility: hidden;
+  opacity: 0;
+
+}
+.has-sub-menu.sous-menu li{
+  border-bottom: solid  black;
+}
+
+.has-sub-menu:hover .sous-menu{
+  visibility: visible;
+  opacity: 1;
+  transition: opacity .005s,visibility 0s 0s;
+}
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   .menu {
     display: flex;
     flex-direction: column;
