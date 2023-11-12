@@ -1,6 +1,16 @@
+body{
+  font-family: Helvetica;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+/**************************HEADER*******************************/ 
+
 header{
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-  font-family: Helvetica;
+  
 }
 
 
@@ -117,45 +127,15 @@ header button:active{
   transition: opacity .005s,visibility 0s 0s;
 }
   
+/**************************FIN HEADER*******************************/ 
+
   
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  .menu {
+
+
+
+/**************************Menu fixed*******************************/ 
+
+  .menu-fixed {
     display: flex;
     flex-direction: column;
     overflow: hidden;
@@ -167,7 +147,7 @@ header button:active{
   }
 
 
-  .menu .menuItems {
+  .menu-fixed .menuItems {
     width: 65px;
     height: 65px;
     background: white;
@@ -176,13 +156,13 @@ header button:active{
     align-items: center;
     transition: .3s;
   }
-  .menu .menuItems:hover {
+  .menu-fixed .menuItems:hover {
     background: black;
     padding-right: 10px;
     width: 80px;
 }
 
-  .menu .menuItems i {
+  .menu-fixed .menuItems i {
     font-size: 2rem;
   }
 
@@ -198,3 +178,123 @@ header button:active{
   .fa-twitter {
     color: #1da1f2;
   }
+
+
+/**************************Fin Menu fixed*******************************/ 
+
+
+
+
+/**************************Footer*******************************/ 
+
+
+footer{
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  width: 100%;
+}
+
+footer .cont-main{
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-bottom:40px ;
+}
+
+footer .cont-main .cont1 ul h4{
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.3;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+footer .cont-main .cont1 ul li{
+  font-size: 17px;
+  font-weight: 600;
+  text-align: center;
+}
+
+footer .cont-second{
+  background-color: black;
+}
+
+footer .cont-second .cont2 .copy p {
+  font-size: 20px;
+  font-weight: 600;
+  color: white; 
+}
+
+footer .cont2{
+  max-width: 1200px;
+  margin: auto;
+}
+
+footer .cont1 ul li a{
+  color: black;
+  text-decoration: none;
+}
+
+footer .cont1 ul li{
+  list-style: none;
+}
+
+footer .cont2{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .cont2{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+@media (max-width : 500px) {
+  footer{
+    flex-direction: column;
+  }
+  footer .cont-main{
+    justify-content: center;
+  }
+
+  footer .cont-main .cont1{
+   
+    padding: 20px; 
+  }
+
+  footer .cont-main .cont1 ul{
+    padding: 0;
+  }
+  footer .cont-main .cont1 h4 {
+    text-align: center;
+  }
+
+  .footer .cont2{
+    padding : 20px; 
+  }
+  .contain-first .bg form {
+    justify-content: center;
+    flex-direction: column;
+  }
+  .contain-first .bg {
+    flex-direction: column;
+    padding-bottom: 10px;
+  
+ }
+ .contain-second h1{
+    font-size: 20px;
+    padding-left: 10px;
+  }
+}
+
+ @media (max-width : 1200px) {
+ 
+  .menu-header{
+    display:none
+  }
+  
+ }
